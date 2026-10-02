@@ -14,4 +14,8 @@ public class TestBench {
     public boolean isTouchSensorPressed() {
         return !touchSensor.getState(); // Returns false when not triggered
     }
+
+    public boolean isTouchSensorReleased() {
+        return touchSensor.getState();
+    }
 }
